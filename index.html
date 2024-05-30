@@ -2,54 +2,82 @@
 <html lang="en">
 <head>
   <title>Steele Electronic Repairs</title>
-  <meta charset="UTF-8"/ content="width=device-width" initial-scale="1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
   <section id="header">
     <div class="header container">
       <div class="brand">
-        <img  src="https://2283f51d0edd8d136347.cdn6.editmysite.com/uploads/b/2283f51d0edd8d136347e85e317bf96151df5288bd0b4c689d283159d74ea1f2/transparent%20professional%20logo%20for%20Steele%20Electronic%20Repairs%20using%20DALL-E%203_1704888655.png?width=2400&optimize=medium" class="header-logo"/>
+        <img src="https://2283f51d0edd8d136347.cdn6.editmysite.com/uploads/b/2283f51d0edd8d136347e85e317bf96151df5288bd0b4c689d283159d74ea1f2/transparent%20professional%20logo%20for%20Steele%20Electronic%20Repairs%20using%20DALL-E%203_1704888655.png?width=2400&optimize=medium" class="header-logo" alt="Steele Electronic Repairs Logo"/>
         <h1 id="title">Steele Electronic Repairs</h1>
       </div>
+    </div>
   </section>
   <section id="appointment">
     <div class="appointment container">
-      <h2>Book An Appointment</h2>
-      <p id="description">To schedule an appointment, complete the form by providing your name, contact information, and a brief description of the issue. Our seasoned technicians will promptly review your request and will reply promptly. Count on us for swift and effective service. Thank you for selecting Steele Electronic Repairs!</p>
-      <form id="survey-form">
-      <label id="name-label" for="name"><input id="name" name="name" type="text" placeholder="Full Name*" required/>|</label>
-      <label id="email-label" for="email"><input id="email" name="email" type="email" placeholder="Email*" required/>|</label>
-      <label id="number-label" for="number"><input id="number" name="number" type="number"placeholder="Phone Number*" min="7" max="15" required/>|</label>
-      <label for="dropdown"> 
-        <select id="dropdown" name="device-model">
-          <option value="">(Select Model)*</option>
-          <option value="1"> Iphone</option>
-          <option value="2"> Ipad</option>
-          <option value="3"> Macbook Air</option>
-          <option value="4"> Macbook Pro</option>
-          <option value="5"> Ipod</option>
-          <option value="6"> Apple Watch</option>
-        </select>
-      |</label>
-      <label for="service"> 
-        <textarea id="service" name="service" type="text" rows="3" cols="30" placeholder="What Services Are You Requesting?"required></textarea>
-      </label>
       
-      <label for="Delivery" class="radio-checkbox-label"><input value="1" name="location" id="Delivery" type="radio" checked/></label>
-      <label for="In-Store" class="radio-checkbox-label"><input value="2" name="location" id="In-Store" type="radio"/></label>
-      <label for="terms-and-conditions" class="radio-checkbox-label"><input value="1" id="terms-and-conditions"type="checkbox" required/></label>
-      <label for="affirm" class="radio-checkbox-label"><input value="1" id="affirm" type="checkbox" required/></label>
-      <label for="submit">
-      <input id="submit" class="submit" type="submit" vlaue="Submit" />
-      </label>
-      
-      </form>
+        <h2>Book An Appointment</h2>
+        <p id="description">To schedule an appointment, complete the form by providing your name, contact information, and a brief description of the issue. Our seasoned technicians will promptly review your request and will reply promptly. Count on us for swift and effective service. Thank you for selecting Steele Electronic Repairs!</p>
+      <div class="inputs container">
+        <form id="survey-form">
+          <label id="name-label" for="name">
+            <input id="name" name="name" type="text" placeholder="Full Name*" required/>
+          </label>
+          <label id="email-label" for="email">
+            <input id="email" name="email" type="email" placeholder="Email*" required/>
+          </label>
+          <label id="number-label" for="number">
+            <input id="number" name="number" type="number" placeholder="Phone Number*" min="7" max="15" required/>
+          </label>
+          <label for="dropdown">
+            <select id="dropdown" name="device-model">
+              <option value="">(Select Model)*</option>
+              <option value="1">Iphone</option>
+              <option value="2">Ipad</option>
+              <option value="3">Macbook Air</option>
+              <option value="4">Macbook Pro</option>
+              <option value="5">Ipod</option>
+              <option value="6">Apple Watch</option>
+            </select>
+          </label>
+          <label for="service">
+          <textarea id="service" name="service" rows="3" cols="30" placeholder="What Services Are You Requesting?" required></textarea>
+          </label>
+          <div class="selectors">
+          <div class="selector-1">
+            <label for="Delivery" class="radio-checkbox-label">
+              <input value="1" name="location" id="Delivery" type="radio" checked/>
+              <span>Delivery</span>
+            </label>
+            <label for="In-Store" class="radio-checkbox-label">
+              <input value="2" name="location" id="In-Store" type="radio"/>
+              <span>In-Store</span>
+            </label>
+          </div>
+          <div class="selector-2">
+            <label for="terms-and-conditions" class="radio-checkbox-label">
+              <input value="1" id="terms-and-conditions" type="checkbox" required/>
+              <span>Terms and Conditions</span>
+            </label>
+            <label for="affirm" class="radio-checkbox-label">
+              <input value="1" id="affirm" type="checkbox" required/>
+              <span>I LOVE REPAIRS!</span>
+            </label>
+          </div>
+          </div>
+        </div>
+          <div class="submit container"
+            <label for="submit">
+              <input id="submit" class="submit-button" type="submit" value="Submit"/>
+            </label>
+          </div>
+        </form>
     </div>
   </section>
   <section id="footer">
     <div class="footer container">
-
     </div>
   </section>
 </body>
